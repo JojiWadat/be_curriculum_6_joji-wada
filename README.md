@@ -1,0 +1,1 @@
+# be_curriculum_6_joji-wada
