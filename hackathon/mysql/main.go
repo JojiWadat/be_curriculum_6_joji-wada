@@ -54,7 +54,7 @@ func init() {
 		log.Fatal("Environment variables for MySQL connection are not set")
 	}
 
-	_db, err := sql.Open("mysql", fmt.Sprintf("%s:%s@(localhost:3306)/%s", mysqlUser, mysqlUserPwd, mysqlDatabase, connStr))
+	_db, err := sql.Open("mysql", fmt.Sprintf(mysqlHost, mysqlUser, mysqlUserPwd, mysqlDatabase, connStr))
 	if err != nil {
 		log.Fatalf("fail: sql.Open, %v\n", err)
 	}
