@@ -1,9 +1,13 @@
 version: '3.8'
 
 services:
-  app:
+  api:
     build:
       context: .
     ports:
       - "8080:8080"
-    container_name: hackathon
+    environment:
+      - PORT=8080
+    volumes:
+      - .
+    command: go run main.go

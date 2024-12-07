@@ -6,3 +6,4 @@ CREATE TABLE user (
 
 insert into user values ('00000000000000000000000001', 'hanako', 20);
 insert into user values ('00000000000000000000000002', 'taro', 30);
+
